@@ -59,7 +59,7 @@
             padding-bottom: 92px;
         }
         .pad2{
-            padding-bottom: 8px;
+            padding-bottom: 10px;
         }
        
        
@@ -173,8 +173,8 @@
                         <h5 class="card-title">New Candidate</h5>
                         <p class="card-text">We can’t wait for you to take part in this Examination test. But to become an official student here you’ll need to register first.</p>
                        <div class="d-grid gap-2">
-                        <button class="btn btn-primary" type="button">Screening Test</button>
-                        <button class="btn btn-primary" type="button">Public Service Examination</button>
+                        <button class="btn btn-primary" type="button" onclick="screening();">Screening Test</button>
+                        <button class="btn btn-primary" type="button" onclick="publicService();">Public Service Examination</button>
                         <button class="btn btn-primary" type="button">BECE</button>
                         <button class="btn btn-primary" type="button">Placement Test</button>
                         
@@ -194,10 +194,9 @@
                         <p class="card-text">Already an official student and wants to change profile and other required details. You will need to sign in to your account.</p>
                         <div class="login">
                             <video width="320" height="160" controls>
-                                <source src="movie.mp4" type="video/mp4">
-                                <source src="movie.ogg" type="video/ogg">
-                                Your browser does not support the video tag.
-                              </video>
+                                <source src="file_example_MP4_640_3MG.mp4" type="video/mp4">
+                            </video>
+                              
                         </div>
                         
                     </div>
@@ -292,7 +291,18 @@
       </div>
       <!-- End of .container -->
 
-     
+    
+        <script>
+           function screening(){
+             window.location='http://www.screeningtest.examsboard.lagosstate.gov.ng';
+            }
+        </script>
+         <script>
+            function publicService(){
+              window.location='http://www.publicservice.examsboard.lagosstate.gov.ng';
+             }
+         </script>
+
   </body>
   
 </html>
